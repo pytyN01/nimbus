@@ -1,342 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
-@import url("http://fonts.cdnfonts.com/css/anaktoria");
-@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap");
-
-* {
-  box-sizing: border-box;
-}
-
-.Cinzel-S {
-  color: "black";
-  font-family: "Cinzel Decorative", cursive !important;
-  font-weight: 400 !important;
-}
-
-.Cinzel-M {
-  font-family: "Cinzel Decorative", cursive !important;
-  font-weight: 700 !important;
-}
-
-.Cinzel-L {
-  font-family: "Cinzel Decorative", cursive !important;
-  font-weight: 900 !important;
-}
-
-.Anaktoria {
-  font-family: "Anaktoria", sans-serif !important;
-}
-
-.TeaTitle {
-  font-family: "UnifrakturCook", cursive !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.TeaSubtitle {
-  font-family: "Diplomata SC", cursive !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-html,
-body {
-  color: "black";
-  overflow-x: hidden;
-  padding: 0;
-  margin: 0;
-}
-
-::-webkit-scrollbar {
-  display: none;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main {
-  height: 100vh;
-  perspective: 2px;
-  overflow-x: hidden;
-  background: black;
-}
-
-.footer {
-  padding: 0;
-  align-items: flex-start !important;
-  background-color: black;
-  color: white;
-  height: 60vh;
-  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
-  text-align: center;
-}
-
-.section {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.section2 {
-  padding-top: 56px;
-  position: relative;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.parallax::after {
-  background-image: url(/src/photos/paper.webp);
-  content: "";
+#mainHEADER {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  transform: translateZ(-1px) scale(1.7);
-  z-index: -2;
-}
-
-.welcome {
   text-align: center;
-  color: black;
-  background: black;
-  height: 100vh;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
-}
-
-.welcome div {
-  z-index: 9;
-}
-
-.welcome video {
-  object-fit: cover;
   width: 100vw;
   height: 100vh;
-  position: fixed;
+}
+#mainHEADER,
+#mainHEADER video,
+#mainHEADER #viewport {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
   top: 0;
   left: 0;
 }
-
-.greeting {
-  height: 104vh;
-  color: black;
-}
-
-.greeting h5 {
-  margin: 0 20vw;
-}
-
-.greeting::after {
-  background-image: url(/src/photos/paper.webp);
-}
-
-.witch-care {
-  height: -1vh;
-}
-
-.witch-care div {
-  margin-top: -30px;
-}
-
-.spilled-tea {
-  height: 170vh;
-  color: black;
-  text-align: center;
-}
-
-.spilled-tea button {
-  z-index: 2;
-  font-size: 2rem;
-}
-
-.spilled-tea::after {
-  background-image: url(/src/photos/paper.webp);
-}
-
-.bean1::after {
-  z-index: -1 !important;
-  transform: translateZ(0) scale(1) !important;
-  background: url(/src/photos/herb-bean-sketch.png) left;
-}
-
-.bean2::after {
-  z-index: -1 !important;
-  transform: translateZ(0) scale(1) !important;
-  background: url(/src/photos/herb-bean-sketch.png) right;
-}
-
-.witch::after {
-  z-index: -1 !important;
-  transform: translateZ(0) scale(1) !important;
-  background: url(/src/photos/notorious-sketch.png) left;
-}
-
-.snacks1::after {
-  z-index: -1 !important;
-  transform: translateZ(0) scale(1) !important;
-  background: url(/src/photos/snacks-sketch.png) right;
-}
-
-.snacks2::after {
-  z-index: -1 !important;
-  transform: translateZ(0) scale(1) !important;
-  background: url(/src/photos/snacks-sketch.png) left;
-}
-
-.thePaper {
-  border: solid black;
-  margin: 0 20px;
-  padding-top: 20px;
-  height: 160vh;
-}
-
-.fLeft {
-  float: left;
-  margin-left: 20px;
-  height: 100px;
-  width: 100px;
-}
-
-.fRight {
-  float: right;
-  margin-right: 20px;
-  height: 100px;
-  width: 100px;
-}
-
-.imgRow {
-  margin-left: 50px;
-  margin-right: 50px;
-  height: 150px;
-  width: 150px;
-}
-
-.banner {
-  margin: 2% 1%;
-  height: 20vh;
+#mainHEADER video {
   background: black;
-  color: white;
+  object-fit: cover;
 }
-
-.menu1 {
-  height: 90vh;
+#mainHEADER #viewport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.menu1 div {
-  z-index: 9;
-}
-
-.menu1::after {
+#mainBODY {
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
   background-image: url(/src/photos/paper.webp);
+  color: black;
+  position: relative;
+  /* padding: 1rem; */
+  margin-top: 100vh;
 }
-
-.menu2 {
-  height: 65vh;
-  background: transparent;
-}
-
-.menu2 h4 {
-  margin: 0 15vw;
-}
-
-.menu2::after {
-  background-image: url(/src/photos/paper.webp);
-}
-
-.menu3 {
-  height: 110vh;
-}
-
-.menu3::after {
-  background-image: url(/src/photos/paper.webp);
-}
-
-.contact {
+#mainBODY::before {
+  content: "";
+  width: 100vw;
   height: 100vh;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
-  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -100vh;
 }
-
-.contact h4 {
-  margin: 0 15vw;
-}
-
-.contact::after {
-  background-image: url(/src/photos/paper.webp);
-}
-
-#contact-form {
-  z-index: 99;
-}
-
-.apothecary {
-  text-align: center;
-  background: black;
-  height: 80vh;
-  /* box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8); */
-}
-
-.item1 {
-  height: 90vh;
-}
-
-.item1 div {
-  z-index: 9;
-}
-
-.item1::after {
-  background: white;
-}
-
-.item2 {
-  height: 80vh;
-  background: pink;
-}
-
-.item2 div {
-  z-index: 9;
-}
-
-.item2 h4 {
-  margin: 0 15vw;
-}
-
-.item2::after {
-  background: white;
-}
-
-.item3 {
-  height: 65vh;
-}
-
-.item3 div {
-  z-index: 9;
-}
-
-.item3::after {
-  background: black;
-}
-
-.rotate {
-  animation: rotation 8s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
+/* #mainBODY div {
+  max-width: 600px;
+  margin: 1rem auto;
+} */
